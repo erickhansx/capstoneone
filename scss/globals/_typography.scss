@@ -1,0 +1,28 @@
+.hero__heading {
+  &--secondary {
+    font-weight: 300;
+    font-size: 5rem;
+  }
+
+  &--primary {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+}
+
+.hero__paragraph {
+  &--primary {
+    font-size: 2rem;
+  }
+}
+
+.hero__text-container {
+  &--upcoming {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+
+  & p {
+    font-size: 2rem;
+  }
+}
