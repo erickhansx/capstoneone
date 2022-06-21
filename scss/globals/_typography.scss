@@ -1,28 +1,153 @@
-.hero__heading {
-  &--secondary {
-    font-weight: 300;
-    font-size: 5rem;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.hero {
+  &__heading {
+    &--primary {
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #ec5242;
+      font-family: 'Cocogoose';
+    }
+
+    &--secondary {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #ec5242;
+    }
   }
 
-  &--primary {
-    font-size: 6rem;
-    font-weight: 700;
+  &__paragraph {
+    &--primary {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__text-container {
+    & p {
+      font-style: 1.2rem;
+    }
+
+    &-upcoming {
+      color: #272a31;
+      font-weight: 900;
+      font-size: 2rem;
+      font-family: 'Cocogoose';
+    }
   }
 }
 
-.hero__paragraph {
-  &--primary {
-    font-size: 2rem;
+// MAIN PROGRAM SECTION
+
+.program {
+  &__heading {
+    color: #fff;
+    font-size: 1.6rem;
   }
 }
 
-.hero__text-container {
-  &--upcoming {
-    font-size: 4rem;
-    font-weight: 900;
-  }
-
-  & p {
-    font-size: 2rem;
+.image-box1 {
+  & h4 {
+    color: #ec5242;
+    font-size: 1.4rem;
   }
 }
+
+.pb__text {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+// .hero__heading {
+//   &--secondary {
+//     color: rgba(0, 0, 0, 0.9);
+//     font-weight: 300;
+//     font-size: 2rem;
+//   }
+
+//   &--primary {
+//     font-size: 3rem;
+//     font-weight: 900;
+//     // mix-blend-mode: overlay;
+//   }
+// }
+
+// .hero__paragraph {
+//   &--primary {
+//     font-size: 1.4rem;
+//   }
+// }
+
+// .hero__text-container {
+//   &--upcoming {
+//     font-size: 2.4rem;
+//     font-weight: 900;
+//   }
+
+//   & p {
+//     font-size: 1.4rem;
+//   }
+// }
+
+// .program {
+//   padding-top: 2rem;
+//   background-color: #272a31;
+
+//   &__hr {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 2rem 0;
+//     hr {
+//       min-width: 15%;
+//       height: 2px;
+//       background-color: #ec5242;
+//       border: none;
+//     }
+//   }
+
+//   &__boxes {
+//     width: 90%;
+//     margin: 2rem;
+//   }
+
+//   &__heading {
+//     display: flex;
+//     justify-content: center;
+//     font-size: 2.4rem;
+//     font-weight: 400;
+//     color: #fff;
+//   }
+
+//   &__boxes--box {
+//     display: flex;
+//     background-color: rgba(183, 183, 184, 0.11);
+//     z-index: 1001;
+//     margin-bottom: 1rem;
+//     align-items: center;
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+
+//     & .image-box1 {
+//       display: flex;
+//       font-size: 1.6rem;
+//       color: #ec5242;
+//       align-items: center;
+//       min-width: 15rem;
+//       padding-top: 1rem;
+//       padding-bottom: 1rem;
+//     }
+
+//     & .pb__text {
+//       color: #fff;
+//       font-size: 1.2rem;
+//       min-width: 15rem;
+//       margin-right: 2rem;
+//     }
+//   }
+// }
