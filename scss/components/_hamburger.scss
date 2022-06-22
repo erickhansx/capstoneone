@@ -1,4 +1,7 @@
 .nav__hamburger {
+  @media only screen and (min-width: 768px) {
+    visibility: hidden;
+  }
   & img {
     height: 20px;
   }

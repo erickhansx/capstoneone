@@ -47,7 +47,7 @@ const artistsList = document.getElementById('featured');
 
 for (let i = 0; i < artistObj.length; i++) {
   const artistInfo = `
-  <div class="featured__artist">
+  <div class="featured__artist artist-container${[i]}">
   <div class="featured__artist-img">
     <img src="${artistObj[i].image}" alt="Artist Picture" />
   </div>
@@ -61,21 +61,18 @@ for (let i = 0; i < artistObj.length; i++) {
   document.getElementById('featured').innerHTML += artistInfo;
 }
 
-// const buttonSeeMore = document.createElement('a');
-// buttonSeeMore.innerHTML = `See More`;
-// buttonSeeMore.setAttribute('id', 'see-more');
-// document.getElementById('featured').appendChild(buttonSeeMore);
+const burger = document.querySelector('.burger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const xmenu = document.querySelector('.x-mobile');
 
-// buttonSeeMore.addEventListener('click', () => {
-//   const featuredChildren = document.getElementById('featured').children;
-//   if (featuredChildren.length > 2) {
-//     featuredChildren[3].classList.add('seemore');
-//     featuredChildren[4].classList.add('seemore');
-//     featuredChildren[5].classList.add('seemore');
-//   } else {
-//     featuredChildren[3].classList.remove('seemore');
-//     featuredChildren[4].classList.remove('seemore');
-//     featuredChildren[5].classList.remove('seemore');
-//   }
-//   console.log(featuredChildren.length);
-// });
+function close() {
+  mobileMenu.style.top = '-100%';
+}
+
+function show() {
+  mobileMenu.style.display = 'flex';
+  mobileMenu.style.top = '0';
+}
+
+burger.addEventListener('click', show);
+mobileMenu.addEventListener('click', close);

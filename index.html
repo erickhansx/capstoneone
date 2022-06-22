@@ -22,27 +22,59 @@
   </head>
   <body>
     <header>
+      <nav class="nav__layer">
+        <ul class="nav__layer--list">
+          <li class="li"><i class="fa-brands fa-facebook"></i></li>
+          <li class="li"><i class="fa-brands fa-twitter"></i></li>
+          <li class="li">English</li>
+          <li class="li">My Page</li>
+          <li class="li">Log out</li>
+        </ul>
+      </nav>
+      <nav>
+        <div class="desktop__menu-container">
+          <div class="desktop__menu--image">
+            <img src="./resources/img/menulogo.png" alt="" />
+          </div>
+          <div class="desktop__menu">
+            <ul class="desktop__menu--list">
+              <li class="link-1">
+                <a href="#">About</a>
+              </li>
+
+              <li class="link-2"><a href="#">Program</a></li>
+
+              <li class="link-3"><a href="#">Join</a></li>
+              <li class="link-4"><a href="#">Sponsors</a></li>
+              <li class="link-5"><a href="#">News</a></li>
+              <li class="almanac"><a href="#">Almanac</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <main>
-        <nav class="nav__layer">
-          <ul class="nav__layer--list">
-            <li class="li"><i class="fa-brands fa-facebook"></i></li>
-            <li class="li"><i class="fa-brands fa-twitter"></i></li>
-            <li class="li">English</li>
-            <li class="li">My Page</li>
-            <li class="li">Log out</li>
-          </ul>
-        </nav>
         <nav class="nav">
           <div class="nav__hamburger">
-            <img src="./resources/img/mobile_menu.png" alt="Mobile Menu" />
+            <a class="burger" href="#"
+              ><img src="./resources/img/mobile_menu.png" alt="Mobile Menu"
+            /></a>
           </div>
           <div class="nav__logo"></div>
-          <ul class="nav__list">
-            <li>About</li>
-            <li>Music</li>
-            <li>Tour Dates</li>
-            <li>Merchandise</li>
-            <li>News</li>
+        </nav>
+        <nav>
+          <ul class="mobile-menu">
+            <li>
+              <a class="x-mobile">X</a>
+            </li>
+            <li class="link-1">
+              <a href="#">About</a>
+            </li>
+
+            <li class="link-2"><a href="#">Program</a></li>
+
+            <li class="link-3"><a href="#">Join</a></li>
+            <li class="link-4"><a href="#">Sponsors</a></li>
+            <li class="link-5"><a href="#">News</a></li>
           </ul>
         </nav>
 
@@ -155,18 +187,36 @@
         <h3>Featured Artists</h3>
         <div class="program__hr featured__hr"><hr /></div>
       </div>
-      <!-- <div class="featured__artist"> -->
-      <!-- <div class="featured__artist-img">
-          <img src="" alt="Artist Picture" />
-        </div>
-        <div class="featured__artist-info">
-          <h5 class="artist__name"></h5>
-          <p class="artist__cv"></p>
-          <div class="hr"><hr /></div>
-          <p class="artist__story"></p>
-        </div> -->
-      <!-- </div> -->
     </section>
+    <footer>
+      <div class="footer__brands">
+        <div class="featured__heading program__heading partner">
+          <h3>Partner</h3>
+          <div class="program__hr featured__hr"><hr /></div>
+        </div>
+        <div>
+          <ul class="brands__list">
+            <li>mozilla</li>
+            <li>Google</li>
+            <li>NAVER</li>
+            <li>daumkakao</li>
+            <li><i class="fa-brands fa-airbnb"></i>airbnb</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__rights">
+        <div class="footer__rights--logo">
+          <h6>
+            Almanac Festival<br />
+            2022
+          </h6>
+        </div>
+        <div class="footer__rights--copyright">
+          2022 Almanac Festival <br />
+          Some rights reserved
+        </div>
+      </div>
+    </footer>
     <script src="./resources/js/app.js"></script>
   </body>
 </html>

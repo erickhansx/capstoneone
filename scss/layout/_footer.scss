@@ -1,0 +1,54 @@
+footer {
+  .footer__brands {
+    background-color: #272a31;
+    padding: 2rem 0 4rem;
+  }
+
+  .partner {
+    & h3 {
+      color: #6d7179;
+      font-weight: 400;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .brands__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #6d7179;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    & :nth-child(2) {
+      font-weight: 300;
+    }
+
+    & :nth-child(3) {
+      font-weight: 900;
+    }
+
+    & :nth-child(1) {
+      color: #bfc1c4;
+      font-weight: 700;
+    }
+  }
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  gap: 8rem;
+
+  &--logo {
+    font-weight: 900;
+    font-size: 4rem;
+  }
+
+  &--copyright {
+    font-size: 1.6rem;
+  }
+}

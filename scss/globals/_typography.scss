@@ -97,6 +97,9 @@ body {
 .artist {
   &__name {
     font-size: 1.2rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   &__cv {
@@ -104,6 +107,14 @@ body {
     font-style: italic;
     font-size: 1rem;
     margin-bottom: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__story {
+    font-size: 1.2rem;
   }
 }
 
@@ -117,92 +128,3 @@ body {
     margin-bottom: 1rem;
   }
 }
-
-// .hero__heading {
-//   &--secondary {
-//     color: rgba(0, 0, 0, 0.9);
-//     font-weight: 300;
-//     font-size: 2rem;
-//   }
-
-//   &--primary {
-//     font-size: 3rem;
-//     font-weight: 900;
-//     // mix-blend-mode: overlay;
-//   }
-// }
-
-// .hero__paragraph {
-//   &--primary {
-//     font-size: 1.4rem;
-//   }
-// }
-
-// .hero__text-container {
-//   &--upcoming {
-//     font-size: 2.4rem;
-//     font-weight: 900;
-//   }
-
-//   & p {
-//     font-size: 1.4rem;
-//   }
-// }
-
-// .program {
-//   padding-top: 2rem;
-//   background-color: #272a31;
-
-//   &__hr {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 2rem 0;
-//     hr {
-//       min-width: 15%;
-//       height: 2px;
-//       background-color: #ec5242;
-//       border: none;
-//     }
-//   }
-
-//   &__boxes {
-//     width: 90%;
-//     margin: 2rem;
-//   }
-
-//   &__heading {
-//     display: flex;
-//     justify-content: center;
-//     font-size: 2.4rem;
-//     font-weight: 400;
-//     color: #fff;
-//   }
-
-//   &__boxes--box {
-//     display: flex;
-//     background-color: rgba(183, 183, 184, 0.11);
-//     z-index: 1001;
-//     margin-bottom: 1rem;
-//     align-items: center;
-//     padding-top: 1rem;
-//     padding-bottom: 1rem;
-
-//     & .image-box1 {
-//       display: flex;
-//       font-size: 1.6rem;
-//       color: #ec5242;
-//       align-items: center;
-//       min-width: 15rem;
-//       padding-top: 1rem;
-//       padding-bottom: 1rem;
-//     }
-
-//     & .pb__text {
-//       color: #fff;
-//       font-size: 1.2rem;
-//       min-width: 15rem;
-//       margin-right: 2rem;
-//     }
-//   }
-// }

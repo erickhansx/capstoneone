@@ -19,3 +19,18 @@
     display: none;
   }
 }
+
+.almanac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #ec5242;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ec5242;
+  max-width: 25rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
