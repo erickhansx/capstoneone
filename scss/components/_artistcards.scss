@@ -1,0 +1,36 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured__artist {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &-info {
+    margin-right: 2rem;
+  }
+}
+
+.featured__artist-img {
+  margin-left: 2rem;
+  & img {
+    max-width: 8rem;
+    border-radius: 100%;
+  }
+}
+
+.featured__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.featured__hr {
+  align-self: center;
+}

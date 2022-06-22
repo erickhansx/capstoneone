@@ -60,7 +60,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     padding: 2rem 0 1rem;
   }
 
@@ -80,12 +79,21 @@ header {
     width: 90%;
     margin: 2rem auto;
 
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
     &--box {
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: rgb(57, 57, 57, 0.5);
       margin-bottom: 1.2rem;
+
+      @media only screen and (min-width: 768px) {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -97,8 +105,27 @@ header {
   justify-content: flex-start;
   padding: 2rem;
 
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
   & img {
     max-width: 40%;
+  }
+}
+
+.program__link-mobile {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 

@@ -7,16 +7,23 @@ body {
 }
 
 .hero {
+  @media only screen and (min-width: 768px) {
+    margin-left: 8rem;
+  }
   &__heading {
     &--primary {
       font-size: 2.5rem;
       font-weight: 400;
       color: #ec5242;
       font-family: 'Cocogoose';
+
+      @media only screen and (min-width: 768px) {
+        font-size: 5rem;
+      }
     }
 
     &--secondary {
-      font-size: 1.6rem;
+      font-size: 3.5rem;
       font-weight: 400;
       color: #ec5242;
     }
@@ -25,12 +32,18 @@ body {
   &__paragraph {
     &--primary {
       font-size: 1.2rem;
+      @media only screen and (min-width: 768px) {
+        font-size: 2.2rem;
+      }
     }
   }
 
   &__text-container {
     & p {
       font-style: 1.2rem;
+      @media only screen and (min-width: 768px) {
+        font-size: 2.2rem;
+      }
     }
 
     &-upcoming {
@@ -38,6 +51,10 @@ body {
       font-weight: 900;
       font-size: 2rem;
       font-family: 'Cocogoose';
+
+      @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+      }
     }
   }
 }
@@ -47,20 +64,58 @@ body {
 .program {
   &__heading {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
 }
 
 .image-box1 {
   & h4 {
     color: #ec5242;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
 }
 
 .pb__text {
   color: #fff;
   font-size: 1.2rem;
+
+  @media only screen and (min-width: 768px) {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+//Featured Section
+
+.artist {
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__cv {
+    color: #ec5242;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.hr {
+  & hr {
+    // margin: 0 auto;
+    background-color: #272a31;
+    border: none;
+    height: 1px;
+    width: 20px;
+    margin-bottom: 1rem;
+  }
 }
 
 // .hero__heading {
