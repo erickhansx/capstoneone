@@ -1,9 +1,6 @@
 .hero.about {
-  margin-left: 0;
-}
-
-header.about {
-  height: 50vh;
+  margin: 0;
+  text-align: center;
 }
 
 .hero__paragraph--invisible {
@@ -46,10 +43,10 @@ header.about {
   margin: 2rem 2rem;
   padding: 0 5rem;
   border: 1px darkgray solid;
-  max-width: 90%;
+  max-width: 25rem;
 
   @media only screen and (min-width: 768px) {
-    max-width: 33%;
+    max-width: 40rem;
   }
 }
 
@@ -83,4 +80,42 @@ header.about {
   border: none;
   height: 1px;
   opacity: 20%;
+}
+
+.image-fest {
+  width: 30rem;
+  height: 20rem;
+  z-index: 0;
+}
+
+.past-events__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4%;
+}
+
+.festival-img {
+  background-image: url('../../resources/img/festival1.webp');
+  background-size: cover;
+  color: #fff;
+  height: 20rem;
+  width: 30rem;
+}
+
+.overlaycolor {
+  background: rgba(247, 75, 56, 0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-text {
+  font-size: 2rem;
+  font-weight: 700;
 }

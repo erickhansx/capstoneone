@@ -66,7 +66,7 @@ header {
 
   @media only screen and (min-width: 768px) {
     height: 100vh;
-    margin-bottom: 10%;
+    padding-bottom: 10%;
   }
 }
 
@@ -107,7 +107,7 @@ header {
   padding-bottom: 1%;
 
   @media only screen and (min-width: 768px) {
-    margin: 10% 0 0;
+    padding: 10% 0;
   }
 
   &__heading {

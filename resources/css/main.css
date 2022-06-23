@@ -52,6 +52,11 @@ body {
   font-weight: 400;
   color: #ec5242;
 }
+@media only screen and (min-width: 768px) {
+  .hero .hero__heading--secondary {
+    font-size: 2.2rem;
+  }
+}
 .hero__paragraph--primary {
   font-size: 1rem;
 }
@@ -227,7 +232,7 @@ header {
 @media only screen and (min-width: 768px) {
   header {
     height: 100vh;
-    margin-bottom: 10%;
+    padding-bottom: 10%;
   }
 }
 
@@ -260,7 +265,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   .program {
-    margin: 10% 0 0;
+    padding: 10% 0;
   }
 }
 .program__heading {
@@ -404,6 +409,11 @@ footer .footer__brands {
   background-color: #272a31;
   padding: 2% 0 4%;
 }
+@media only screen and (min-width: 768px) {
+  footer .footer__brands {
+    display: none;
+  }
+}
 footer .partner h3 {
   color: #6d7179;
   font-weight: 400;
@@ -419,7 +429,7 @@ footer .brands__list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #6d7179;
   gap: 2rem;
   -ms-flex-wrap: wrap;
@@ -435,6 +445,11 @@ footer .brands__list :nth-child(1) {
   color: #bfc1c4;
   font-weight: 700;
 }
+@media only screen and (min-width: 768px) {
+  footer .brands__list {
+    font-size: 4rem;
+  }
+}
 
 .footer__rights {
   display: -webkit-box;
@@ -449,12 +464,22 @@ footer .brands__list :nth-child(1) {
   padding: 4%;
   gap: 10%;
 }
+@media only screen and (min-width: 768px) {
+  .footer__rights {
+    background-color: #272a31;
+    color: #fff;
+  }
+}
 .footer__rights--logo {
   font-weight: 900;
   font-size: 4rem;
 }
 .footer__rights--copyright {
   font-size: 1.6rem;
+}
+
+.past-events hr {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -526,14 +551,14 @@ footer .brands__list :nth-child(1) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 768px) {
   .featured {
     display: grid;
-    margin-left: 8rem;
     grid-template-areas: "featured featured" "a1 a2" "a3 a4" "a5 a6";
     margin: 2% 6%;
+    height: 80vh;
   }
   .featured .program__heading {
     grid-area: featured;
@@ -544,11 +569,11 @@ footer .brands__list :nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 1%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1%;
 }
 @media only screen and (min-width: 768px) {
   .featured__artist {
@@ -556,11 +581,11 @@ footer .brands__list :nth-child(1) {
   }
 }
 .featured__artist-info {
-  margin-right: 2rem;
+  margin-right: 1%;
 }
 
 .featured__artist-img {
-  margin-left: 2rem;
+  margin-left: 1%;
 }
 .featured__artist-img img {
   max-width: 8rem;
@@ -583,4 +608,149 @@ footer .brands__list :nth-child(1) {
 .featured__hr {
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.hero.about {
+  margin: 0;
+  text-align: center;
+}
+
+.hero__paragraph--invisible {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .hero__paragraph--invisible {
+    display: block;
+  }
+}
+
+.hero__paragraph--container.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.hero__heading--container.about {
+  text-align: center;
+}
+
+.festivalemail {
+  font-weight: 900;
+}
+
+.hero__text-container.about {
+  margin: 2rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+.almanac-logo__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.almanac-img {
+  margin: 2rem 2rem;
+  padding: 0 5rem;
+  border: 1px darkgray solid;
+  max-width: 25rem;
+}
+@media only screen and (min-width: 768px) {
+  .almanac-img {
+    max-width: 40rem;
+  }
+}
+
+.almanac-logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.almanac-logo__text {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.almanac-logo__text h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.almanac-logo__hr {
+  margin-bottom: 1rem;
+}
+.almanac-logo__p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.bottom-hr hr {
+  background-color: rgb(175, 175, 175);
+  border: none;
+  height: 1px;
+  opacity: 20%;
+}
+
+.image-fest {
+  width: 30rem;
+  height: 20rem;
+  z-index: 0;
+}
+
+.past-events__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4%;
+}
+
+.festival-img {
+  background-image: url("../../resources/img/festival1.webp");
+  background-size: cover;
+  color: #fff;
+  height: 20rem;
+  width: 30rem;
+}
+
+.overlaycolor {
+  background: rgba(247, 75, 56, 0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-text {
+  font-size: 2rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

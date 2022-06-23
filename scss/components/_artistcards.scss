@@ -6,13 +6,13 @@
 
   @media only screen and (min-width: 768px) {
     display: grid;
-    margin-left: 8rem;
     grid-template-areas:
       'featured featured'
       'a1 a2'
       'a3 a4'
       'a5 a6';
     margin: 2% 6%;
+    height: 80vh;
 
     .program__heading {
       grid-area: featured;

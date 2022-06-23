@@ -23,9 +23,12 @@ body {
       font-size: 1.6rem;
       font-weight: 400;
       color: #ec5242;
-      @media only screen and (min-width: 768px) {
-        font-size: 2.2rem;
-      }
+    }
+  }
+
+  .hero__heading--secondary {
+    @media only screen and (min-width: 768px) {
+      font-size: 2.2rem;
     }
   }
 
