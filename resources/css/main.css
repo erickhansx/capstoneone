@@ -36,13 +36,8 @@ body {
   font-family: Lato, sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
-  .hero {
-    margin-left: 8rem;
-  }
-}
 .hero__heading--primary {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #ec5242;
   font-family: "Cocogoose";
@@ -53,12 +48,12 @@ body {
   }
 }
 .hero__heading--secondary {
-  font-size: 3.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #ec5242;
 }
 .hero__paragraph--primary {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .hero__paragraph--primary {
@@ -74,8 +69,8 @@ body {
   }
 }
 .hero__text-container-upcoming {
-  color: #272a31;
-  font-weight: 900;
+  color: rgba(74, 75, 78, 0.968627451);
+  font-weight: 700;
   font-size: 2rem;
   font-family: "Cocogoose";
 }
@@ -231,34 +226,41 @@ header {
 }
 @media only screen and (min-width: 768px) {
   header {
-    height: 80vh;
+    height: 100vh;
+    margin-bottom: 10%;
   }
 }
 
 .hero {
-  padding-bottom: 4rem;
+  margin: 0 2%;
+  padding-bottom: 10%;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin: 0 10%;
+  }
 }
 .hero__heading--container {
-  margin: 0 2rem;
+  margin: 0 1%;
 }
 .hero__paragraph--container {
-  margin: 2.5rem 2rem 0;
+  margin: 1% 1% 0;
   background-color: #fbfbfb;
   padding: 1.5rem;
   border: 3px solid #fff;
 }
 .hero__text-container {
-  margin: 2rem 2rem 0;
+  margin: 1% 1% 0;
 }
 
 .program {
   background-color: #272a31;
   background-image: url("../../resources/img/pattern_bg.png");
-  padding-bottom: 2rem;
+  padding-bottom: 1%;
 }
 @media only screen and (min-width: 768px) {
   .program {
-    height: 50vh;
+    margin: 10% 0 0;
   }
 }
 .program__heading {
@@ -400,7 +402,7 @@ header {
 
 footer .footer__brands {
   background-color: #272a31;
-  padding: 2rem 0 4rem;
+  padding: 2% 0 4%;
 }
 footer .partner h3 {
   color: #6d7179;
@@ -444,8 +446,8 @@ footer .brands__list :nth-child(1) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4rem;
-  gap: 8rem;
+  padding: 4%;
+  gap: 10%;
 }
 .footer__rights--logo {
   font-weight: 900;
@@ -530,8 +532,8 @@ footer .brands__list :nth-child(1) {
   .featured {
     display: grid;
     margin-left: 8rem;
-    height: 70vh;
     grid-template-areas: "featured featured" "a1 a2" "a3 a4" "a5 a6";
+    margin: 2% 6%;
   }
   .featured .program__heading {
     grid-area: featured;

@@ -65,22 +65,27 @@ header {
   background-size: cover;
 
   @media only screen and (min-width: 768px) {
-    height: 80vh;
+    height: 100vh;
+    margin-bottom: 10%;
   }
 }
 
 .hero {
-  padding-bottom: 4rem;
+  margin: 0 2%;
+  @media only screen and (min-width: 768px) {
+    margin: 0 10%;
+  }
+  padding-bottom: 10%;
 
   &__heading {
     &--container {
-      margin: 0 2rem;
+      margin: 0 1%;
     }
   }
 
   &__paragraph {
     &--container {
-      margin: 2.5rem 2rem 0;
+      margin: 1% 1% 0;
       background-color: #fbfbfb;
       padding: 1.5rem;
       border: 3px solid #fff;
@@ -89,7 +94,7 @@ header {
 
   &__text {
     &-container {
-      margin: 2rem 2rem 0;
+      margin: 1% 1% 0;
     }
   }
 }
@@ -99,10 +104,10 @@ header {
 .program {
   background-color: #272a31;
   background-image: url('../../resources/img/pattern_bg.png');
-  padding-bottom: 2rem;
+  padding-bottom: 1%;
 
   @media only screen and (min-width: 768px) {
-    height: 50vh;
+    margin: 10% 0 0;
   }
 
   &__heading {

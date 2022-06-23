@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 10%;
 
   @media only screen and (min-width: 768px) {
     display: grid;
     margin-left: 8rem;
-    height: 70vh;
     grid-template-areas:
       'featured featured'
       'a1 a2'
       'a3 a4'
       'a5 a6';
+    margin: 2% 6%;
 
     .program__heading {
       grid-area: featured;
@@ -22,20 +22,20 @@
 
 .featured__artist {
   display: flex;
-  gap: 1rem;
+  gap: 1%;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1%;
   @media only screen and (min-width: 768px) {
     max-width: 90%;
   }
 
   &-info {
-    margin-right: 2rem;
+    margin-right: 1%;
   }
 }
 
 .featured__artist-img {
-  margin-left: 2rem;
+  margin-left: 1%;
   & img {
     max-width: 8rem;
     border-radius: 100%;
