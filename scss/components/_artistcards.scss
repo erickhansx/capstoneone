@@ -1,0 +1,57 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-areas:
+      'featured featured'
+      'a1 a2'
+      'a3 a4'
+      'a5 a6';
+    margin: 2% 6%;
+    height: 80vh;
+
+    .program__heading {
+      grid-area: featured;
+    }
+  }
+}
+
+.featured__artist {
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  margin-bottom: 1%;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 90%;
+  }
+
+  &-info {
+    margin-right: 1%;
+  }
+}
+
+.featured__artist-img {
+  margin-left: 1%;
+
+  & img {
+    max-width: 8rem;
+    border-radius: 100%;
+  }
+}
+
+.featured__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.featured__hr {
+  align-self: center;
+}

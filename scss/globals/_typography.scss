@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.hero {
+  &__heading {
+    &--primary {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #ec5242;
+      font-family: Cocogoose, sans-serif;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 5rem;
+      }
+    }
+
+    &--secondary {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #ec5242;
+    }
+  }
+
+  .hero__heading--secondary {
+    @media only screen and (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__paragraph {
+    &--primary {
+      font-size: 1rem;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  &__text-container {
+    & p {
+      font-style: 1.2rem;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    &-upcoming {
+      color: #4a4b4ef7;
+      font-weight: 700;
+      font-size: 2rem;
+      font-family: Cocogoose, sans-serif;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+// MAIN PROGRAM SECTION
+
+.program {
+  &__heading {
+    color: #fff;
+    font-size: 1.4rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.image-box1 {
+  & h4 {
+    color: #ec5242;
+    font-size: 1.2rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.pb__text {
+  color: #fff;
+  font-size: 1.2rem;
+
+  @media only screen and (min-width: 768px) {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+//Featured Section
+
+.artist {
+  &__name {
+    font-size: 1.2rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__cv {
+    color: #ec5242;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__story {
+    font-size: 1.2rem;
+  }
+}
+
+.hr {
+  & hr {
+    background-color: #272a31;
+    border: none;
+    height: 1px;
+    width: 20px;
+    margin-bottom: 1rem;
+  }
+}

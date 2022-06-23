@@ -1,0 +1,84 @@
+footer {
+  .footer__brands {
+    background-color: #272a31;
+    padding: 2% 0 4%;
+  }
+
+  .partner {
+    & h3 {
+      color: #6d7179;
+      font-weight: 400;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .brands__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #6d7179;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    & :nth-child(2) {
+      font-weight: 300;
+    }
+
+    & :nth-child(3) {
+      font-weight: 900;
+    }
+
+    & :nth-child(1) {
+      color: #bfc1c4;
+      font-weight: 700;
+    }
+
+    @media only screen and (min-width: 768px) {
+      font-size: 4rem;
+    }
+  }
+}
+
+.footer__brands.about {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  gap: 10%;
+
+  @media only screen and (min-width: 768px) {
+    background-color: #fff;
+  }
+
+  &--logo {
+    font-weight: 900;
+    font-size: 4rem;
+  }
+
+  &--copyright {
+    font-size: 1.6rem;
+  }
+}
+
+.past-events {
+  & hr {
+    margin-bottom: 2rem;
+  }
+}
+
+.footer__rights.about {
+  background-color: #fff;
+  color: #272a31;
+
+  @media only screen and (min-width: 768px) {
+    background-color: #272a31;
+    color: #fff;
+  }
+}
