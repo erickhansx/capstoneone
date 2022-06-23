@@ -2,10 +2,6 @@ footer {
   .footer__brands {
     background-color: #272a31;
     padding: 2% 0 4%;
-
-    @media only screen and (min-width: 768px) {
-      display: none;
-    }
   }
 
   .partner {
@@ -44,6 +40,12 @@ footer {
   }
 }
 
+.footer__brands.about {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .footer__rights {
   display: flex;
   justify-content: center;
@@ -52,8 +54,7 @@ footer {
   gap: 10%;
 
   @media only screen and (min-width: 768px) {
-    background-color: #272a31;
-    color: #fff;
+    background-color: #fff;
   }
 
   &--logo {
@@ -69,5 +70,15 @@ footer {
 .past-events {
   & hr {
     margin-bottom: 2rem;
+  }
+}
+
+.footer__rights.about {
+  background-color: #fff;
+  color: #272a31;
+
+  @media only screen and (min-width: 768px) {
+    background-color: #272a31;
+    color: #fff;
   }
 }

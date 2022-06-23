@@ -409,11 +409,6 @@ footer .footer__brands {
   background-color: #272a31;
   padding: 2% 0 4%;
 }
-@media only screen and (min-width: 768px) {
-  footer .footer__brands {
-    display: none;
-  }
-}
 footer .partner h3 {
   color: #6d7179;
   font-weight: 400;
@@ -451,6 +446,12 @@ footer .brands__list :nth-child(1) {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .footer__brands.about {
+    display: none;
+  }
+}
+
 .footer__rights {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,8 +467,7 @@ footer .brands__list :nth-child(1) {
 }
 @media only screen and (min-width: 768px) {
   .footer__rights {
-    background-color: #272a31;
-    color: #fff;
+    background-color: #fff;
   }
 }
 .footer__rights--logo {
@@ -480,6 +480,17 @@ footer .brands__list :nth-child(1) {
 
 .past-events hr {
   margin-bottom: 2rem;
+}
+
+.footer__rights.about {
+  background-color: #fff;
+  color: #272a31;
+}
+@media only screen and (min-width: 768px) {
+  .footer__rights.about {
+    background-color: #272a31;
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 768px) {

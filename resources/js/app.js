@@ -45,7 +45,7 @@ const artistObj = [
 
 for (let i = 0; i < artistObj.length; i += 1) {
   const artistInfo = `
-  <div class="featured__artist artist-container${[i]}">
+  <article class="featured__artist artist-container${[i]}">
   <div class="featured__artist-img">
     <img src="${artistObj[i].image}" alt="Artist Picture" />
   </div>
@@ -54,7 +54,7 @@ for (let i = 0; i < artistObj.length; i += 1) {
     <p class="artist__cv">${artistObj[i].cv}</p>
     <div class="hr"><hr></div>
     <p class="artist__story">${artistObj[i].story}</p>
-  </div>`;
+  </div> </article>`;
 
   document.getElementById('featured').innerHTML += artistInfo;
 }
