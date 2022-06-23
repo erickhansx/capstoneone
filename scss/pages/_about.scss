@@ -1,0 +1,86 @@
+.hero.about {
+  margin-left: 0;
+}
+
+header.about {
+  height: 50vh;
+}
+
+.hero__paragraph--invisible {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero__paragraph--container.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.hero__heading--container.about {
+  text-align: center;
+}
+
+.festivalemail {
+  font-weight: 900;
+}
+
+.hero__text-container.about {
+  margin: 2rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+.almanac-logo__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.almanac-img {
+  margin: 2rem 2rem;
+  padding: 0 5rem;
+  border: 1px darkgray solid;
+  max-width: 90%;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 33%;
+  }
+}
+
+.almanac-logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__text {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  &__text h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__hr {
+    margin-bottom: 1rem;
+  }
+
+  &__p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.bottom-hr hr {
+  background-color: rgb(175, 175, 175);
+  border: none;
+  height: 1px;
+  opacity: 20%;
+}
