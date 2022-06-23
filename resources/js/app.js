@@ -72,4 +72,5 @@ function show() {
 }
 
 burger.addEventListener('click', show);
+
 mobileMenu.addEventListener('click', close);
