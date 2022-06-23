@@ -43,9 +43,7 @@ const artistObj = [
   },
 ];
 
-const artistsList = document.getElementById('featured');
-
-for (let i = 0; i < artistObj.length; i++) {
+for (let i = 0; i < artistObj.length; i += 1) {
   const artistInfo = `
   <div class="featured__artist artist-container${[i]}">
   <div class="featured__artist-img">
@@ -63,7 +61,6 @@ for (let i = 0; i < artistObj.length; i++) {
 
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
-const xmenu = document.querySelector('.x-mobile');
 
 function close() {
   mobileMenu.style.top = '-100%';

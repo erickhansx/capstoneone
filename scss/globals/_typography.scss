@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
 
 body {
   font-family: Lato, sans-serif;
@@ -12,7 +11,7 @@ body {
       font-size: 2rem;
       font-weight: 400;
       color: #ec5242;
-      font-family: 'Cocogoose';
+      font-family: Cocogoose, sans-serif;
 
       @media only screen and (min-width: 768px) {
         font-size: 5rem;
@@ -35,6 +34,7 @@ body {
   &__paragraph {
     &--primary {
       font-size: 1rem;
+
       @media only screen and (min-width: 768px) {
         font-size: 2.2rem;
       }
@@ -44,6 +44,7 @@ body {
   &__text-container {
     & p {
       font-style: 1.2rem;
+
       @media only screen and (min-width: 768px) {
         font-size: 2.2rem;
       }
@@ -53,7 +54,7 @@ body {
       color: #4a4b4ef7;
       font-weight: 700;
       font-size: 2rem;
-      font-family: 'Cocogoose';
+      font-family: Cocogoose, sans-serif;
 
       @media only screen and (min-width: 768px) {
         font-size: 3rem;
@@ -79,6 +80,7 @@ body {
   & h4 {
     color: #ec5242;
     font-size: 1.2rem;
+
     @media only screen and (min-width: 768px) {
       font-size: 1.8rem;
     }
@@ -100,6 +102,7 @@ body {
 .artist {
   &__name {
     font-size: 1.2rem;
+
     @media only screen and (min-width: 768px) {
       font-size: 2rem;
     }
@@ -123,7 +126,6 @@ body {
 
 .hr {
   & hr {
-    // margin: 0 auto;
     background-color: #272a31;
     border: none;
     height: 1px;

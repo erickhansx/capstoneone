@@ -25,6 +25,7 @@
   gap: 1%;
   align-items: center;
   margin-bottom: 1%;
+
   @media only screen and (min-width: 768px) {
     max-width: 90%;
   }
@@ -36,6 +37,7 @@
 
 .featured__artist-img {
   margin-left: 1%;
+
   & img {
     max-width: 8rem;
     border-radius: 100%;
